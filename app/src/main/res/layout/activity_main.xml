@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f4e8b8"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/logoId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/cachorroId"
+        android:layout_width="108dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="49dp"
+        android:layout_marginStart="49dp"
+        android:layout_marginTop="28dp"
+        android:src="@drawable/cao"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logoId" />
+
+    <ImageView
+        android:id="@+id/gatoId"
+        android:layout_width="113dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="46dp"
+        android:layout_marginLeft="68dp"
+        android:layout_marginRight="46dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="28dp"
+        android:src="@drawable/gato"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/cachorroId"
+        app:layout_constraintTop_toBottomOf="@+id/logoId" />
+
+    <ImageView
+        android:id="@+id/leaoId"
+        android:layout_width="108dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="22dp"
+        android:layout_marginLeft="48dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="29dp"
+        android:src="@drawable/leao"
+        app:layout_constraintBottom_toTopOf="@+id/ovelhaId"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cachorroId" />
+
+    <ImageView
+        android:id="@+id/macacoId"
+        android:layout_width="108dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="46dp"
+        android:layout_marginLeft="73dp"
+        android:layout_marginRight="46dp"
+        android:layout_marginStart="73dp"
+        android:layout_marginTop="21dp"
+        android:src="@drawable/macaco"
+        app:layout_constraintBottom_toTopOf="@+id/vacaId"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/leaoId"
+        app:layout_constraintTop_toBottomOf="@+id/gatoId" />
+
+    <ImageView
+        android:id="@+id/ovelhaId"
+        android:layout_width="113dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:layout_marginLeft="48dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="22dp"
+        android:src="@drawable/ovelha"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/leaoId" />
+
+    <ImageView
+        android:id="@+id/vacaId"
+        android:layout_width="113dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:layout_marginEnd="41dp"
+        android:layout_marginLeft="68dp"
+        android:layout_marginRight="41dp"
+        android:layout_marginStart="68dp"
+        android:src="@drawable/vaca"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ovelhaId" />
+</android.support.constraint.ConstraintLayout>
